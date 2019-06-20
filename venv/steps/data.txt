@@ -1,0 +1,7 @@
+From: xyz0@gmai.com Mon Jun 1 00:01:02 2019
+From xyz1@gmai.com Tue Jun 2 00:01:02 2019
+From: xyz2@gmai.com Wed Jun 3 00:01:02 2019
+From xyz3@gmai.com Thu Jun 4 00:01:02 2019
+From: xyz4@gmai.com Fri Jun 5 00:01:02 2019
+From xyz5@gmai.com Sat Jun 6 00:01:02 2019
+From: xyz6@gmai.com Sun Jun 7 00:01:02 2019
