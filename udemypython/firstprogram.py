@@ -18,6 +18,10 @@ print(mystring.split('a'))
 
 name = "Imverybadfellow"
 
+last_letters = name[::-1]
+
+print(last_letters)
+
 last_letters = name[-1]
 
 print(last_letters)
@@ -345,7 +349,7 @@ with open('text.txt', mode='w+') as f:
     print(f.read())
 
 
-
+print('#########################################FILE I/O################################')
 
 
 
