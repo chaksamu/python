@@ -217,6 +217,8 @@ ttt = ('one', 2, '3.14')
 
 print(ttt)
 
+print(ttt[0])
+
 print(ttt[-1])
 
 print(tt.count('a'))
@@ -224,3 +226,126 @@ print(tt.count('a'))
 print(tt.index('a'))
 
 print(tt.index('z'))
+
+tup = (1, 2, [4, 5, 6])
+
+print(tup[0])
+
+print(tup[2][2])
+
+print(tup[2][0])
+
+print('#########################################set################################')
+
+myset = set()
+
+myset.add(1)
+
+print(myset)
+
+myset.add(2)
+
+print(myset)
+
+myset.add(1)
+
+print(myset)
+
+mylist = [1,1,1,1,1,2,2,2,2,3,3,3,3,3]
+
+print(set(mylist))
+
+myset = {1,2,3,4,5,5,4,3,2,1,1,2,3,4,5}
+
+print(myset)
+
+print(set('Mississippi'))
+
+print(set([1,1,2,3]))
+
+print('#########################################boolean################################')
+
+print(1 == 1)
+
+print(1 <= 1)
+
+print(1 >= 1)
+
+print(1 >= 2)
+
+print(type(1 >= 2))
+
+
+print('#########################################FILE I/O################################')
+
+print('pwd')
+
+myfile = open('myfile.txt')
+
+print(myfile.read())
+
+print(myfile.seek(0))
+
+print(myfile.read())
+
+print(myfile.seek(0))
+
+contents = myfile.read()
+
+print(contents)
+
+print(myfile.seek(0))
+
+print(myfile.read())
+
+print(contents)
+
+myfile = open('myfile.txt')
+
+content = myfile.readlines()
+
+print(content)
+
+myfile.close()
+
+print('######################')
+
+mf = open('C:\\Users\\g706427\\Desktop\\python\\udemypython\\myfile.txt')
+
+contentt = mf.read()
+
+print(contentt)
+
+with open('C:\\Users\\g706427\\Desktop\\python\\udemypython\\myfile.txt') as fm:
+    contentts = fm.read()
+    print(contentts)
+
+with open('text.txt', mode='w') as f:
+    f.write('I created the file')
+
+with open('text.txt', mode='r') as f:
+    print(f.read())
+
+with open('text.txt', mode='a') as f:
+    f.write('\nOne in First')
+
+with open('text.txt', mode='r') as f:
+    print(f.read())
+
+with open('text.txt', mode='r+') as f:
+    print(f.read())
+    f.write('\nTwo in Second')
+    print(f.seek(0))
+    print(f.read())
+
+with open('text.txt', mode='w+') as f:
+    print(f.read())
+    f.write('\nThree in Third')
+    print(f.seek(0))
+    print(f.read())
+
+
+
+
+
+
