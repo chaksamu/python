@@ -157,7 +157,11 @@ print(new_num.count('d'))
 
 print(new_num.index('d'))
 
+list4 = [5,3,4,6,1]
 
+list4.sort()
+
+print(list4)
 
 print('##########################################dict################################')
 
@@ -349,7 +353,188 @@ with open('text.txt', mode='w+') as f:
     print(f.read())
 
 
-print('#########################################FILE I/O################################')
+print('#########################################examples###############################')
 
 
+d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+
+print(d['k1'][0]['nest_key'][1])
+
+l = [1, 2, [3, 4, [6, 7]]]
+
+print(l[2][2][1])
+
+ll = [1,{'k1':['this',['that']]}]
+
+print(ll[1]['k1'][0])
+
+
+d2 = {'k1':[9,10], 'k2':[8,7]}
+
+print(d2['k1'][1])
+print(d2['k2'][1])
+
+
+d = {'k1':1,'k2': 2}
+print(d['k1'])
+print(d['k2'])
+
+d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
+print(d['k1'][2]['k2'][1]['tough'][2])
+
+
+
+print('#########################################comparision###############################')
+print('####==###')
+print(2 == 2)
+print(2.0 == 2)
+print('2' == '2')
+print('2' == 2)
+print('bye' == 'Bye')
+print('two' == 2)
+print('hello' == 'hello')
+
+print('#### > ###')
+
+print(2 > 3)
+print('hello' > 'olleh')
+print('hello' > 'hello')
+print(3 > 1)
+print(3 > 3)
+
+print('#### >= ###')
+
+print(2 >= 3)
+print('hello' >= 'olleh')
+print('hello' >= 'hello')
+print(3 >= 1)
+print(3 >= 3)
+print('bye' >= 'Bye')
+
+print('#### <= ###')
+
+print(2 <= 3)
+print('hello' <= 'olleh')
+print('hello' <= 'hello')
+print(3 <= 1)
+print(3 <= 3)
+print('bye' <= 'Bye')
+
+
+print('#### < ###')
+
+print(2 < 3)
+print('hello' < 'olleh')
+print('hello' < 'hello')
+print(3 < 1)
+print(3 < 3)
+print('bye' < 'Bye')
+
+print('#########################################logical operators###############################')
+print('#### and ###')
+
+print(2 < 3 and 1 > 3)
+
+print('chak' == 'chak' and '2' == 2)
+
+print('chak' == 'chak' and 2 == 2)
+
+print('#### or ###')
+
+print(2 < 3 or 1 > 3)
+
+print('chak' == 'chak' or '2' == 2)
+
+print('chak' == 'chak' or 2 == 2)
+
+print('#### not ###')
+
+print(not 2 < 3)
+
+print(not 'chak' == 'chak')
+
+print(not '2' == 2)
+
+
+print('#########################################if elif and else###############################')
+
+if True:
+    print('Its True!')
+
+if 3>2:
+    print('Its True!')
+
+hungry = True
+if hungry:
+    print('Its True!')
+
+hungry = False
+if hungry:
+    print('Its True!')
+else:
+    print("Its False")
+
+hungry = 'no'
+if hungry == 'no':
+    print('Not Hungry!')
+else:
+    print("Hungry")
+
+hungry = 'now'
+if hungry == 'no':
+    print('Not Hungry!')
+elif hungry == 'now':
+    print('Feeling Hungry')
+else:
+    print("Hungry")
+
+hungry = 'nope'
+if hungry == 'no':
+    print('Not Hungry!')
+elif hungry == 'now':
+    print('Feeling Hungry')
+elif hungry == 'nope':
+    print('Not Feeling Hungry')
+else:
+    print("Hungry")
+
+name = 'chkri'
+if name == 'chakri':
+    print('Hello Chakri!')
+elif name == 'chandu':
+    print('Hello Chandu!')
+elif name == 'Aslesh':
+    print('Hello Aslesh')
+else:
+    print('what is your name?')
+
+print('#########################################for loops###############################')
+
+l = [1,2,3]
+for ll in l:
+    print(ll)
+
+l = [1,2,3]
+for ll in l:
+    print('hello')
+
+word = 'chakri'
+for w in word:
+    print(w)
+
+t = (4,5,6)
+for tt in t:
+    print(tt)
+
+d = {'k1':1,'k2':2,'k3':3}
+for k in d.keys():
+    print(k)
+for k in d.values():
+    print(k)
+for k in d.items():
+    print(k)
+
+s = {1, 'two', 3.14}
+for ss in s:
+    print(ss)
 
